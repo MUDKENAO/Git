@@ -31,44 +31,7 @@ public class AdvertisingAgency {
 		}
 		
 		return reject;
-		
-//		int countLoop = 0;
-//		int reject = 0;
-//		int[] listBillBoard = new int[100];
-//		
-//		listBoardInitial(listBillBoard);
-//		
-//		while(countLoop < request.length) {
-//			if (isOccupied(listBillBoard, request[countLoop])) {
-//				reject ++;
-//			}
-//			countLoop++;
-//		}
-//		
-//		return reject;
-//	}
-//	
-//	private boolean isOccupied(int[] listBillBoard, int billBoard) {
-//		boolean result = false;
-//		
-//		if(listBillBoard[billBoard-1] == 0)
-//		{
-//			listBillBoard[billBoard-1] = 1;
-//		}else
-//			result = true;
-//		
-//		return result;
-//	}
-//	
-//	private void listBoardInitial(int[] listBillBoard) {
-//		 
-//		for(int i =0; i< listBillBoard.length; i++) {
-//			listBillBoard[i] = 0;
-//		}
-//		
 	}
-	
-	
 
 	/**
 	 * @param args
