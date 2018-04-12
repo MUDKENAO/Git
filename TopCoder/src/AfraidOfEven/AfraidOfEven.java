@@ -2,7 +2,7 @@
  * Problem statement:
  * see http://community.topcoder.com/stat?c=problem_statement&pm=11146
  * 
- * The sequence given has at leash seq.size()/2 elements which are the same as the sequence we should return. Because the sequence we should return must be the one of the following form: one odd number£¬followed by one even number£¬then, odd£¬even. etc.  ... Or even, odd, even, odd..etc....or identical to the given sequence.
+ * The sequence given has at leash seq.size()/2 elements which are the same as the sequence we should return. Because the sequence we should return must be the one of the following form: one odd number, followed by one even number then, odd, even. etc.  ... Or even, odd, even, odd..etc....or identical to the given sequence.
  * 
  * So we can just rebuild the whole sequence with either the difference between seq[2] and seq[0] or the one between seq[3] and seq[1].
  * */
