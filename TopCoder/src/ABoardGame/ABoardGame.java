@@ -135,7 +135,7 @@ public class ABoardGame {
 		
 		finalBucket = SplitIntoBucket(BoardArray, bucket);
 		
-		//for(int i = finalBucket[0].length - 1; i >=0; i-- ){
+		
 		for(int i = 0; i < finalBucket[0].length; i++ ){
 			if(finalBucket[0][i] > finalBucket[1][i])
 				return "Alice";
