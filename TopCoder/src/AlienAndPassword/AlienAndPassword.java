@@ -9,6 +9,7 @@ import java.util.stream.IntStream;
 
 public class AlienAndPassword {
 	public int getNumber(String S) {
+		//mapToObj function generates the substring by erasing one character, Collectors transforms the stream to set which guarantees the substring's uniqueness.
 		return IntStream.range(0, S.length()).mapToObj(i -> S.substring(0, i) + S.substring(i + 1))
 				.collect(Collectors.toSet()).size();
 	}
