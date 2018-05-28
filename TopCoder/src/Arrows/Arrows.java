@@ -18,16 +18,16 @@ public class Arrows {
 	boolean isArrow(String str) {
 		char first = str.charAt(0);
 		char last = str.charAt(str.length() - 1);
-		return (first == '<' && sameLine(str.substring(1)))
-				|| (last == '>' && sameLine(str.substring(0,
+		return (first == '<' && isSameLine(str.substring(1)))
+				|| (last == '>' && isSameLine(str.substring(0,
 						str.length() - 1)));
 	}
 
-	boolean sameLine(String str) {
-		return sameChar(str, '-') || sameChar(str, '=');
+	boolean isSameLine(String str) {
+		return isSameChar(str, '-') || isSameChar(str, '=');
 	}
 
-	boolean sameChar(String str, char ch) {
+	boolean isSameChar(String str, char ch) {
 		return str.replaceAll(ch + "", "").equals("");
 	}
 	
