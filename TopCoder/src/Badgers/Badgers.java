@@ -29,6 +29,15 @@ public class Badgers {
 		feedNum--;
 		return feedNum;
 	}
+	
+	public static void main(String[] args) {
+		int hunger[] = {1,1,1,1,1};
+		int greed[] = {1000,1000,1000,1000,1000};
+		int totalFood = 10;
+		
+		System.out.println(new Badgers().feedMost(hunger, greed, totalFood));
+
+	}
 }
 
 class Badger implements Comparable<Badger> {
@@ -42,15 +51,6 @@ class Badger implements Comparable<Badger> {
 
 	public int compareTo(Badger other) {
 		return eat - other.eat;
-	}
-
-	public static void main(String[] args) {
-		int hunger[] = {1,1,1,1,1};
-		int greed[] = {1000,1000,1000,1000,1000};
-		int totalFood = 10;
-		
-		System.out.println(new Badgers().feedMost(hunger, greed, totalFood));
-
 	}
 
 }
