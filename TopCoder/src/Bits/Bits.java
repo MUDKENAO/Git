@@ -14,7 +14,8 @@ public class Bits {
 	}
 	
 	public static void main(String args[]){
-		int n = 1500;
+		int n = 1501;
+		
 		System.out.println(new Bits().minBits(n) );
 	}
 }
