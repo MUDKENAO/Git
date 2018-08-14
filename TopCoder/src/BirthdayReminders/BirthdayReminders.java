@@ -64,6 +64,7 @@ class Celebration implements Comparable<Celebration> {
 	int occasionIndex;
 	int number;
 
+	
 	public Celebration(int date, int friendIndex, int occasionIndex, int number) {
 		this.date = date;
 		this.friendIndex = friendIndex;
