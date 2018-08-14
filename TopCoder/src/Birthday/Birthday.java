@@ -21,7 +21,8 @@ public class Birthday {
 	
 	public static void main(String args[]){
 		String date = "01/02";
-		String[] birthdays = {"02/17 Wernie",
+		String[] birthdays = {
+				 "02/17 Wernie",
 				 "10/12 Stefan",
 				 "02/17 MichaelJordan",
 				 "10/12 LucianoPavarotti",
@@ -32,7 +33,7 @@ public class Birthday {
 
 class DateComparator implements Comparator<String> {
 	String base;
-
+	
 	DateComparator(String base) {
 		this.base = base;
 	}
